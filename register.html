@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 charset = "UTF-8>
+  <title>Register</title>
+  <link rel="stylesheet" href="css/formstyles.css"/>
+  <link rel="stylesheet" href="css/ym.css"/>
+  <script type="text/javascript" src="js/registerFunction.js"></script>
+</head>
+<body>
+  <div class="container">
+      <header>
+        <nav class ="navbar" id='nav'>
+          <ul>
+            <div id="topnav-left">
+              <li><a href="review.html"  id="Review">Write a Review <i class='fa far fa-envelope'></i></a></li>
+              <li><a href="yelpMock.html">Home</a></li>
+              <li><a href="#">Events</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Chat <i class='fa far fa-comment'></i></a></li>
+            </div>
+          </ul>
+        </nav>
+      </header>
+
+    <div id="main">
+      <section id="cname">
+        <h1>Yelper!</h1>
+      </section>
+      <form method="get" action="" id="mainForm">
+         <fieldset>
+            <legend>Register</legend>
+            <table>
+               <tr>
+                  <td colspan="2">
+                     <p>
+                       <label>Full Name</label><br/>
+                      <input type="text" name="fullName" id="fullName" class="required hilightable" required/>
+                     </p>
+                     <p>
+                       <label>Email Address</label><br/>
+                      <input type="text" name="email" id="email" class="required hilightable" required>
+                     </p>
+                     <p>
+                       <label>Password</label><br/>
+                      <input type="password" name="pw1" id="pw1" class="required hilightable" required>
+                     </p>
+                     <p>
+                       <label>Confirm Password</label><br/>
+                       <input type="password" name="pw2" id="pw2" class="required hilightable" required>
+                     </p>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <div class="box">
+                        <input type="checkbox" name="condition" id="condition" required >
+                        <label>Agree to the <a href="#" style="color: grey; text-decoration: underline;">Terms and Conditions</a></label>
+                     </div>
+                  </td>
+               </tr>
+               <tr>
+                  <td colspan="2">
+                     <div class="rectangle centered">
+                        <input type="submit" class="btn"> <input type="reset" value="Clear Form" class="btn">
+                        <input type="reset" value="Return to home" class="btn" onclick="location.href='yelpMock.html'";>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+         </fieldset>
+       </form>
+    </div>
+  </div>
+
+    <footer id="footer">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <img src="images/buildings.png" id="buildings">
+        <br><br>
+        <a href="#" class="fa fa-facebook">  Follow us</a>
+        <span class="tab"><a href="#" class="fa fa-twitter">     Tweet us</a></span>
+        <p>Tony McGraw & Christpher Carpio, Copyright &copy; 2020 - IT 353 - Web Development Technologies </p>
+    </footer>
+
+</body>
+</html>

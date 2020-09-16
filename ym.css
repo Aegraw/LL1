@@ -1,0 +1,236 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body, html{
+  width:100%;
+  height: 100%;
+  padding: 0;
+  margin:0;
+  min-height: 100%;
+}
+
+.container{
+  width: 100%;
+  height: auto;
+  position: relative;
+  min-height: 100%;
+}
+header{
+  width: 100%;
+  position: sticky;
+  z-index: 1;
+}
+
+body{
+  background-image: url("../images/chicago2.jpg");
+  background-size: auto;
+}
+
+.navbar{
+  width: 100%;
+  position: fixed;
+  text-align: center;
+  transition: .5s;
+  overflow: auto;
+  margin: 0px;
+  padding: 0px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  background: rgba(194, 255, 250, 0.7);
+}
+
+.navbar ul li{
+  list-style-type: none;
+  font-family: sans-serif;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.navbar ul li a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px;;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#topnav-left{
+  float:left;
+}
+
+#topnav-left li a:hover{
+  background-color: #41575C;
+  text-decoration: underline;
+}
+#Review{
+  background-color: #4CAF50;
+}
+
+#topnav-right{
+  float:right;
+}
+
+#topnav-right li a:hover{
+  background-color: #41575C;
+  text-decoration: underline;
+}
+
+#cname{
+  text-align: center;
+  font-size: xx-large;
+  padding-top: 10px;
+  color:#00B4CC;
+}
+
+#main{
+  width: 100%;
+  position: absolute;
+  top: 20%;
+  overflow: auto;
+  height:613px;
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+
+#main::-webkit-scrollbar {
+    display: none;  /* Safari and Chrome */
+}
+
+.search {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.searchTerm {
+  border: 3px solid #00B4CC;
+  border-right: none;
+  padding: 5px;
+  height: 36px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: black;
+}
+
+.searchButton {
+  width: 70px;
+  height: 52px;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+#input{
+  width: 70%;
+  font-size: 20px;
+}
+
+#box{
+  padding-top: 15px;
+}
+#title{
+  width:100%;
+}
+#review{
+  width:100%;
+  height: 100%;
+}
+
+#results{
+  display:inline-block;
+  width:70%;
+  height:auto;
+  border:1px solid;
+  margin: 0 1px 1px 1px;
+  text-align: center;
+  background-color: grey;
+  position: relative;
+  border-radius:10px;
+  margin-left: 190px;
+}
+#reviews{
+  display:inline-block;
+  width:70%;
+  height:auto;
+  border:1px solid;
+  margin: 0 1px 1px 1px;
+  text-align: left;
+  background-color: grey;
+  position: relative;
+  border-radius:10px;
+  margin-left: 226px;
+  align-content: center;
+  padding: 5px;
+}
+#reviews ul{
+  list-style-type: none;
+}
+
+#rLegend {
+  background-color: #616161 ;
+  color: white;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0.25em;
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  border-radius: 3px;
+}
+#rFieldset {
+  margin: 1em auto;
+  background-color: #F5F5F5;
+  width: 90%;
+  border-radius: 1px;
+  padding: 15px;
+}
+
+#footer {
+  background-image: url("images/bean.jpg");
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #E1F7FF;
+  color: black;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 2px;
+  align-content: center;
+  clear: both;
+}
+
+#footer a{
+  color: black;
+  text-decoration: none;
+}
+
+#footer a:hover{
+  color: #41575C
+}
+
+.tab {
+  display:inline-block;
+  margin-left: 40px;
+}
+
+#buildings{
+  width: 20%;
+  height: 1%;
+  opacity: .7;
+  -webkit-user-drag: none;
+}
