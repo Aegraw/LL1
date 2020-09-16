@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 charset = "UTF-8>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <title>Reviews</title>
+  <link rel="stylesheet" href="css/formstyles.css"/>
+  <link rel="stylesheet" href="css/ym.css"/>
+  <script type="text/javascript" src="js/loginFunction.js"></script>
+  <script type="text/javascript">
+  function showMessage(){
+    var title = document.getElementById("title").value;
+      var message = document.getElementById("review").value;
+
+
+      rFieldset.innerHTML+= "<br><h3>" + title + "</h3><br>"+ "<p>" + message + "</p><br><br>";
+
+  }
+  </script>
+</head>
+<body>
+  <div class="container">
+      <header>
+        <nav class ="navbar" id='nav'>
+          <ul>
+            <div id="topnav-left">
+              <li><a href="review.html"  id="Review">Write a Review <i class='fa far fa-envelope'></i></a></li>
+              <li><a href="yelpMock.html">Home</a></li>
+              <li><a href="#">Events</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Chat <i class='fa far fa-comment'></i></a></li>
+            </div>
+          </ul>
+        </nav>
+      </header>
+
+    <div id="main">
+      <section id="cname">
+        <h1>Yelper!</h1>
+      </section>
+      <form method="get" action="">
+         <fieldset>
+            <legend>Review</legend>
+            <table>
+              <tr>
+                 <td colspan="2">
+                    <p>
+                     <input name="title" id="title" class="required hilightable" placeholder="Enter restaurant name" required/></input>
+                    </p>
+              <tr>
+               <tr>
+                  <td colspan="2">
+                     <p>
+                      <textarea  name="review" id="review" class="required hilightable" placeholder="Write a comment.." required/></textarea>
+                     </p>
+               <tr>
+                  <td colspan="2">
+                     <div class="rectangle centered">
+                        <input type="Button" placeholder="Submit" value="Submit" class="btn" onclick="showMessage()"> <input type="reset" value="Clear Form" class="btn">
+                        <input type="reset" value="Return to home" class="btn" onclick="location.href='yelpMock.html'";>
+                     </div>
+                  </td>
+               </tr>
+            </table>
+         </fieldset>
+       </form>
+
+       <div id="reviews">
+         <fieldset id="rFieldset">
+           <legend id="rLegend">Reviews Section</legend>
+         <ul>
+           <li>
+             <h3>Four Square Restaurant</h3>
+             <p>Reviewed on December 20, 1999</p>
+             <br>
+             <p>Some of you may have seen the four star writeup of Four Square Restaurant in Friday's "What's Up" supplement to the News & Observer. Its food was described as "among the very best in the Triangle" and its atmosphere as "formally elegant." What's more, it's relatively close to the Duke campus (2701 Chapel Hill Road, the old Bartlett Mangum House; tel. 401-9877).
+
+               There's little I would add except to say that the food quality, in my experience (and that of some of our other colleagues), can be a bit uneven. It's not quite Magnolia Grill. But when it's great, it's truly superb.
+
+               Prof. Steven Schwarcz</p>
+             </li>
+             <br>
+         </ul>
+         <ul>
+           <li>
+             <h3>Sitar India Palace</h3>
+             <p>Reviewed on September 19, 2005</p>
+             <br>
+             <p>Easily the finest Indian restaurant in Durham, and arguably the best in the Triangle, Sitar India Palace is located in the Regency Plaza strip-mall off Shannon Road, near 15-501 (tel. 490-1326). With one important exception (discussed below), this restaurant has been consistently good for some years, and recently has gotten even better. It's also been expanded and renovated, and now has two attractively furnished rooms so there's usually plenty of room. Prices are relatively modest, especially given the quality. The buffet is an exceptional bargain, around $15 for a broad range of delicacies, including wonderful desserts. Be forewarned, though, that there is an important exception to this restaurant's quality: the Tandoori-oven cooked meats are often served overcooked and dry. This occurs even when I warn against it. Oh well, at least the non-Tandoori items are excellent.
+             </p>
+             <br>
+           </li>
+         </ul>
+
+       </div>
+
+       </reviews>
+     </fieldset>
+    </div>
+
+  </div>
+
+    <footer id="footer">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <img src="images/buildings.png" id="buildings">
+        <br><br>
+        <a href="#" class="fa fa-facebook">  Follow us</a>
+        <span class="tab"><a href="#" class="fa fa-twitter">     Tweet us</a></span>
+        <p>Tony McGraw & Christpher Carpio, Copyright &copy; 2020 - IT 353 - Web Development Technologies </p>
+    </footer>
+
+</body>
+</html>

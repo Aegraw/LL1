@@ -1,0 +1,149 @@
+
+*{
+  padding: 0px;
+  margin:0px;
+  box-sizing: border-box;
+}
+
+body, html{
+  width:100%;
+  height: 100%;
+}
+.header{
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/Chicago2.jpg");
+  background-size: cover;
+  font-style: italic;
+
+
+
+}
+
+.navbar{
+  padding-top: 150px;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  text-align: center;
+  transition: .5s;
+
+}
+
+.navbar ul li{
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 50px;
+  color: white;
+  font-size: medium;
+  font-family: sans-serif;
+  cursor: pointer;
+  border-radius: 10px;
+
+
+}
+
+.navbar ul li:hover {
+  text-decoration: underline;
+}
+
+#topnav-right{
+  float:right;
+  padding-right: 150px;
+}
+
+#topnav-left{
+  float:left;
+  padding-left: 1px;
+}
+
+#cname{
+  text-align: center;
+  font-size: xx-large;
+  padding-top: 10px;
+  color:#00B4CC;
+}
+
+
+
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #00B4CC;
+  border-right: none;
+  padding: 5px;
+  height: 36px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #00B4CC;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+.footer {
+   background-image: url("images/bean.jpg");
+   position: relative;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height: 50%;
+   background-color: #E1F7FF;
+   color: black;
+   text-align: center;
+   padding-top: 25px;
+   align-content: center;
+   padding-bottom: 10px;
+}
+
+.footer a{
+  color: black;
+  text-decoration: none;
+}
+.footer a:hover{
+  color: #EBA999;
+}
+
+.tab {
+       display:inline-block;
+       margin-left: 40px;
+}
+
+#buildings{
+  width: 50%;
+  height: 1%;
+  opacity: .7;
+}
